@@ -1,0 +1,7 @@
+{
+  "name": "gasyTsena",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

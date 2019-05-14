@@ -1,0 +1,40 @@
+
+<ion-content>
+
+  <form [formGroup]="inscription" (ngSubmit)="inscrire()"> 
+    <ion-title class="ion-text-center" margin>Remplir le formulaire ci-dessous</ion-title>
+    <ion-item >
+      <ion-label position="floating"  color="medium">Nom de votre entreprise</ion-label>
+      <ion-input type="text" formControlName="entreprise"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"  color="medium">Numéro de téléphone</ion-label>
+      <ion-input type="text" formControlName="phone"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating"  color="medium">Adresse éléctronique</ion-label>
+        <ion-input type="text" formControlName="mail"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating"  color="medium">Vore région,ex:SAVA</ion-label>
+        <ion-input type="text" formControlName="region"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating"  color="medium">Votre ville, ex:Sambava</ion-label>
+        <ion-input type="text"  formControlName="ville"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating"  color="medium">Adresse exacte de votre entreprise</ion-label>
+        <ion-input type="text"  formControlName="adresse"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"  color="medium">Votre mot de passe</ion-label>
+      <ion-input type="password"  formControlName="motcle" id='pwd'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"  color="medium">Rétaper votre mot de passe</ion-label>
+      <ion-input type="password" id='conf'></ion-input>
+    </ion-item>
+    <ion-button color="medium" type="submit" [disabled]="!egal() || !inscription.valid" margin-top>S'inscrire</ion-button>
+  </form>
+</ion-content>
