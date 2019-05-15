@@ -12,6 +12,8 @@ log.txt
 .vscode/
 npm-debug.log*
 
+www/
+node_modules/
 tmp/
 temp/
 
