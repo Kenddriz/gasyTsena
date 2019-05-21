@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-item color="primary" text-center>
+      <ion-title class="">Produit</ion-title>
+      <button class="btn btn-primary" style="margin: 0; padding: 0;">
+        <ion-icon name="md-add-circle" class="" style="font-size: 3em; text-shadow:1px 1px 1px 1px black;"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-toolbar>
+  <ion-toolbar>
+      <ion-searchbar placeholder="Chercher"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card *ngFor="let list of listArray">          
+        <ion-card-header style="padding-bottom:0" class="border-bottom">
+            <div class="border-bottom border-secondary row" >
+                <ion-icon name="albums" slot="start" class="col-1 col-sm-1 border-right" style="padding:0; line-height:0.1rem"></ion-icon>
+                &nbsp;
+                <ion-card-subtitle class="col-10 col-sm-10" style="padding:0; line-height:1" >categorie: {{list[3]}} </ion-card-subtitle>
+            </div> 
+
+            <div class="row">
+                <ion-label class="col-9" style="padding:0; margin:0; line-height: 2.5;" text-center>{{list[2]}}</ion-label>
+                <button id=view-{{list[7]}} class="col-3 btn btn-outline-primary" style="font-size: 0.8rem">View</button>
+            
+                <ion-badge class="bg-secondary col-11" style="margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0">
+                  DESCRITION
+                </ion-badge> 
+                <ion-badge class="bg-secondary col-1" style="margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0">
+                <ion-icon name="ios-arrow-forward" class="" style="font-size: 1em; "></ion-icon>
+                </ion-badge> 
+            </div>
+        </ion-card-header>
+
+        <ion-card-content >
+            This is content, without any paragraph or header tags,
+
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>
