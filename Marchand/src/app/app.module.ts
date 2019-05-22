@@ -16,7 +16,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, NgbModule.forRoot(),AppRoutingModule],
+// tslint:disable-next-line: max-line-length
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, NgbModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,

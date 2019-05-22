@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavParams } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-ajout',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AjoutPage implements OnInit {
 
-  constructor() { }
+  constructor(navParams: NavParams, public ModalController: ModalController) { }
 
   ngOnInit() {
   }
 
+  dismiss() {
+    this.ModalController.dismiss();
+  }
 }

@@ -2,9 +2,9 @@
   <ion-toolbar color="primary">
     <ion-item color="primary" text-center>
       <ion-title class="">Produit</ion-title>
-      <button class="btn btn-primary" style="margin: 0; padding: 0;">
-        <ion-icon name="md-add-circle" class="" style="font-size: 3em; text-shadow:1px 1px 1px 1px black;"></ion-icon>
-      </button>
+      <ion-button (click)="ajoutModal()" class="btn btn-primary" style="margin: 0; padding: 0;">
+        <ion-icon name="md-add-circle" class="" style="font-size: 1em; text-shadow:1px 1px 1px 1px black;"></ion-icon>
+      </ion-button>
     </ion-item>
   </ion-toolbar>
   <ion-toolbar>
@@ -22,9 +22,9 @@
                 <ion-card-subtitle class="col-10 col-sm-10" style="padding:0; line-height:1" >categorie: {{list[3]}} </ion-card-subtitle>
             </div> 
 
-            <div class="row">
-                <ion-label class="col-9" style="padding:0; margin:0; line-height: 2.5;" text-center>{{list[2]}}</ion-label>
-                <button id=view-{{list[7]}} class="col-3 btn btn-outline-primary" style="font-size: 0.8rem">View</button>
+            <div class="row border">
+                <ion-label class="col-9 border" style="padding:0; margin:0; line-height: 2.5;" text-center>{{list[2]}}</ion-label>
+                <ion-button id=view-{{list[7]}} class="col-2" style="margin:0; padding:0; font-size: 0.8rem">View</ion-button>
             
                 <ion-badge class="bg-secondary col-11" style="margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0">
                   DESCRITION
